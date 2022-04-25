@@ -51,6 +51,30 @@ actions
 		set bend1;
         }
     }
+
+        {
+        name    outlet1;
+        type    cellSet;
+        action  new;
+        source  boxToCell;
+        sourceInfo
+        {
+        box     (-0.015348778 0.0 -0.0052) (0.0 0.012765 0.0052);
+        }
+    }
+
+    {
+        name    outletZone;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+		set outlet1;
+        }
+    }
+
+
     
 /*
     {
